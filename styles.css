@@ -1,0 +1,41 @@
+/* header */
+
+header {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+
+/* footer */
+
+footer {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #3882F6;
+    padding: 10px;
+}
+
+.my-git {
+    color: #F9FAF8;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-date {
+    font-size: 10px;
+    color:#c9cac8;
+}
