@@ -11,10 +11,25 @@
 <body>
     <header>Etch-a-Sketch</header>
     <div id="content">
+        <div class="controls">
+            <div class="reset-container">
+                <h4 id="size-title">Size of grid:</h4>
+                <p>36x36</p>
+                <input type="range" min="8" max="64" value="36" id="grid-size-input">
+                <button id="reset">Reset</button>
+            </div>
+            <div class="color-container">
+                <h4 id="color-title">Color:</h4>
+                <input type="color" id="color-input" value="#000000">
+            </div>
+        </div>
+        <div class="grid-outer-container">
+            <div class="grid-inner-container"></div>
+        </div>
     </div>
     <footer>
         <a href="https://github.com/PawelKrol23"><div class="my-git">PawelKrol23</div></a>
-        <div class="footer-date">// 21.02.2022</div>
+        <div class="footer-date">// 22.02.2022</div>
     </footer>
 </body>
 </html>

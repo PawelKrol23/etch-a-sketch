@@ -1,3 +1,17 @@
+body, html {
+    margin: 0;
+    font-family: 'Roboto', arial;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3882F6;
+}
+
 /* header */
 
 header {
@@ -8,7 +22,7 @@ header {
     color: #F9FAF8;
     padding: 20px;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 64px;
 }
 
 
@@ -38,4 +52,118 @@ a {
 .footer-date {
     font-size: 10px;
     color:#c9cac8;
+}
+
+/* content */
+
+#content {
+    flex: 1;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #F9FAF8;
+}
+
+#size-title {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #F9FAF8;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#reset {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #F9FAF8;
+    padding: 8px 24px;
+    border: #F9FAF8 solid 3px;
+    border-radius: 5px;
+    background-color: #3882F6;
+    font-weight: bolder;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+#grid-size-input {
+    -webkit-appearance: none;
+    margin: 12px 0;
+    width: 150px;
+}
+
+#grid-size-input:focus {
+    outline: none;
+}
+
+#grid-size-input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #F9FAF8;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+#grid-size-input::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #F9FAF8;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+
+#color-input {
+    width: 100px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+#color-input::-webkit-color-swatch {
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: #F9FAF8 solid 5px;
+    width: 100px;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 5px;
+}
+
+.grid-outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 550px;
+    height: 550px;
+    background-color: #F9FAF8;
+    border-radius: 20px;
+    box-shadow: #000000 1px 1px 5px;
+}
+
+.grid-inner-container {
+    width: 500px;
+    height: 500px;
+    border: #000000 solid 1px;
 }
